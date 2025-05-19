@@ -9,7 +9,7 @@ if($Num >= 10){
     echo "O número é menor que 10.\n";
 }
 
-<?php 
+// <?php  2
 
 $Num1 = readline("Digite um número: ");
 
@@ -19,7 +19,7 @@ if($Num1 >=0){
     echo "O número é negativo.\n";
 }
 
-<?php
+// <?php 3
 
 $Apple = readline("Digite quantas maçãs foram compradas: ");
 
@@ -35,7 +35,7 @@ if($Apple <= 11){
 
 }
 
-<?php
+//<?php 4
 
 $Nota1A = readline("Digite a nota 1 do aluno: ");
 $Nota2A = readline("Digite a nota 2 do aluno: ");
@@ -50,7 +50,7 @@ echo "com a nota de $Media. \n";
     echo "com a nota de $Media. \n";
 }
 
-<?php
+// <?php 5
 
 $AnoNas = readline("Digite o ano de nascimento: ");
 
@@ -67,7 +67,7 @@ if($Idade >= 18){
     echo "Você não pode votar nem tirar habilitação\n";
 }
 
-<?php
+// <?php 6
 
 $Num1 = readline("Digite um número: ");
 $Num2 = readline("Digite outro número: ");
@@ -84,7 +84,26 @@ if($Num1 != $Num2){
     echo "Os números são iguais, digite outros número. \n";
 }
 
-<?php
+// <?php 7
+
+$
+$Idade = readline("Digite a idade: ");
+
+If($Idade >= 5 && $Idade <= 7){
+    echo "Você está na categoria Infantil A. \n";
+}else if($Idade >= 8 && $Idade <= 10){
+    echo "Você está na categoria Infantil B. \n";
+}else if($Idade >= 11 && $Idade <= 13){
+    echo "Você está na categoria Juvenil A. \n";
+}else if($Idade >= 14 && $Idade <= 17){
+    echo "Você está na categoria Juvenil B. \n";
+}else if($Idade >= 18){
+    echo "Você está na categoria Sênior. \n";
+}else{
+    echo "Você ainda não pode nadar F. \n";
+}
+
+//<?php 8
 
 $Vasp = readline("Digite o valor a ser pago: ");
 $Option = readline("Escolha a forma de pagamento (1 - à vista com 10% de desconto, 2 - à vista com 5% de desconto, 3 - em 2x sem juros, 4 - em 3x com 10% de juros): ");
@@ -106,7 +125,19 @@ switch($Option){
     break;
 }
 
-<?php
+// <?php 9
+
+$Num1 = readline("Digite um número: ");
+
+if($Num1 >= 30 && $Num1 <= 90){
+    echo "O número está entre 30 e 90 \n";
+}else if($Num1 >= 120){
+    echo "O número é maior que 120 \n";
+}else{
+    echo "O número não está entre 30 e 90, e nem é maior que 120 \n";
+}
+
+// <?php 10
 
 $Valor = readline("Digite o valor do produto: ");
 
