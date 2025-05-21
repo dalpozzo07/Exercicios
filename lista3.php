@@ -9,7 +9,7 @@ for ($i = 1; $i <= 10; $i++) {
 $soma = 0;
 
 for($i = 1; $i <= 10; $i++){
-    $entrada = (int) readline("Digite o $iº número inteiro: ");
+    $entrada = (int) readline("Digite o $i número inteiro: ");
     $soma += $entrada;
 }
 
