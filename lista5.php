@@ -4,8 +4,7 @@ $verifica = (int) readline("Digite um número para verificar (par e múltiplo de
 $divisor = (int) readline("Digite um número divisor: \n");
 $inicio = (int) readline("Digite o número inicial do intervalo: \n");
 $fim = (int) readline("Digite o número final do intervalo: \n");
-$altura = (float) readline("Digite a altura: \n");
-$peso = (float) readline("Digite o peso: \n");
+$altura = 0;
 
 function verificarMultiploDe4($num) {
     if ($num % 4 == 0) {
@@ -51,6 +50,24 @@ function somarMultiplos($divisor, $inicio, $fim) {
     echo "A soma dos múltiplos de $divisor entre $inicio e $fim é $soma \n";
 }
 
+function MulherEhomem($altura) {
+    $opcao = readline("Digite 1 para mulher ou 2 para homem: \n");
+    switch($opcao){
+        case '1': 
+        $altura = (float) readline("Digite a altura: \n");
+        $pesoideal = 62.1 * $altura - 44.7;
+        echo "O peso ideal é $pesoideal kg \n";
+        break;
+
+        case '2': 
+        $altura = (float) readline("Digite a altura: \n");
+        $pesoideal = 72.7 * $altura - 58;
+        echo "O peso ideal é $pesoideal kg \n";
+        break;
+        default: 
+        echo "Opção inválida \n";   
+    }
+}
 
 
 
@@ -58,5 +75,6 @@ verificarMultiploDe4($verifica);
 verificarPar($verifica);
 somarEntre($divisor, $inicio);
 somarMultiplos($divisor, $inicio, $fim);
+MulherEhomem($altura);
 
 ?>
